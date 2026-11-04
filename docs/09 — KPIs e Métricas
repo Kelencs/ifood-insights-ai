@@ -1,0 +1,43 @@
+# 09 — KPIs e Métricas
+
+## Princípio
+
+Separar métricas do produto, métricas operacionais e métricas de qualidade da IA. Indicadores do protótipo não devem ser apresentados como indicadores reais do iFood.
+
+## Métricas do dashboard
+
+| KPI | Definição | Observação |
+|---|---|---|
+| Total de reclamações | Contagem de IDs válidos | Exibir período e filtros |
+| Reclamações por categoria | Contagem por categoria | Pode mostrar volume e percentual |
+| Sentimento negativo | Negativas / classificações válidas | Exibir denominador |
+| Gravidade alta | Casos alta / gravidade determinada | Não incluir indeterminados no denominador |
+| Taxa de revisão | Registros sinalizados / registros processados | Ajuda a avaliar ambiguidade |
+| Evolução temporal | Contagem por dia/semana/mês | Só se data for confiável |
+| Categorias sem classificação | Registros indeterminados ou outros | Não esconder incerteza |
+
+## Métricas de qualidade da IA
+
+- Acurácia, precisão, recall e F1 por categoria.
+- F1 macro para classes desbalanceadas.
+- Validade do JSON.
+- Taxa de revisão humana.
+- Taxa de evidência não suportada.
+- Latência e custo por registro, quando disponíveis.
+
+## Métricas de resultado operacional
+
+No MVP, não afirmar redução de reclamações ou melhoria de satisfação, pois isso exigiria intervenção real e avaliação antes/depois. Em uma evolução futura, poderiam ser acompanhados:
+- volume de reclamações por pedido;
+- tempo de resolução;
+- reincidência por categoria;
+- taxa de contato repetido;
+- satisfação após resolução.
+
+## Cuidados de interpretação
+
+- Percentuais precisam apresentar o denominador.
+- Comparações exigem períodos comparáveis.
+- Uma correlação não demonstra causa.
+- Amostras pequenas devem ser sinalizadas.
+- Dados sintéticos servem para demonstrar funcionamento, não para inferir comportamento real de mercado.
