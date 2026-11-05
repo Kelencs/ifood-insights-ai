@@ -58,13 +58,12 @@ A primeira versão não exige banco de dados, aplicação web, autenticação ou
 
 ```text
 ifood-insights-ai/
-├── data/                 # Bases fictícias e dados de exemplo
+├── dados/                 # Bases fictícias e dados de exemplo
 ├── docs/                 # Documentação de produto e solução
-├── examples/             # Exemplos de entrada e saída
+├── examplos/             # Exemplos de entrada e saída
 ├── powerbi/              # Arquivos e documentação do relatório Power BI
 ├── src/                  # Código-fonte Python
-├── tests/                # Testes funcionais e de qualidade da IA
-├── .gitignore
+├── teste/                # Testes funcionais e de qualidade da IA
 └── README.md
 ```
 
